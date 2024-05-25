@@ -30,6 +30,7 @@ MonSec is a student-run cyber-security club at Monash University, supported by i
 
 - HTML
 - CSS
+- JS
 
 ## Installation
 
