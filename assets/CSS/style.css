@@ -85,15 +85,14 @@ button, input, optgroup, select, textarea {
     padding: 10px 0;
 }
 
-.logo img {
+.logo a img {
     width: 50px;
+    transition: transform 0.3s, filter 0.3s;
 }
 
-/* ============================================ */
-/*                   NAVIGATION                 */
-/* ============================================ */
-.nav {
-    position: relative;
+.logo a img:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(270deg) brightness(1.5); /* Adjust the hue-rotate and brightness values as needed */
 }
 
 .nav .menu-toggle {
@@ -102,6 +101,19 @@ button, input, optgroup, select, textarea {
     border: none;
     color: inherit;
     cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav .menu-toggle:hover {
+    transform: scale(1.1);
+    color: rgb(var(--color-primary-500));
+}
+
+/* ============================================ */
+/*                   NAVIGATION                 */
+/* ============================================ */
+.nav {
+    position: relative;
 }
 
 .nav .nav-links {
@@ -146,37 +158,210 @@ button, input, optgroup, select, textarea {
 /* ============================================ */
 .about {
     text-align: left;
+    padding: 20px;
 }
 
 .about h1 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.update-info {
+    font-size: 16px;
+    color: rgb(var(--color-neutral-500));
+}
+
+.update-info .dot {
+    color: rgb(var(--color-primary-500));
+}
+
+.toc-header {
+    background-color: rgb(var(--color-neutral-800));
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toc {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc li a {
+    text-decoration: none;
+    color: rgb(var(--color-primary-500));
+}
+
+.toc li a:hover {
+    text-decoration: underline;
 }
 
 .about h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.about ul {
-    list-style-type: none;
-    padding: 0;
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.about ul li {
-    margin-bottom: 10px;
+.about p strong {
+    font-weight: bold;
 }
 
-.about pre {
+.about .link {
+    color: rgb(var(--color-primary-500));
+    text-decoration: none;
+}
+
+.about .link:hover {
+    text-decoration: underline;
+}
+
+.about .code-block {
     background-color: rgb(var(--color-neutral-800));
     padding: 15px;
     border-radius: 8px;
     overflow-x: auto;
+    color: rgb(var(--color-neutral-300));
 }
 
+.about .code-block code {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color: inherit;
+}
+
+.about .about-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.nested-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nested-list > li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+.nested-list > li::before {
+    content: '•';
+    color: rgb(var(--color-primary-500));
+    margin-right: 5px;
+}
+
+.nested-list ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.nested-list ul li {
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+.nested-list ul li::before {
+    content: '▪';
+    color: rgb(var(--color-primary-500));
+    margin-right: 5px;
+}
+
+/* ============================================ */
+/*                  JOIN US                     */
+/* ============================================ */
+.join {
+    text-align: left;
+    padding: 20px;
+}
+
+.join h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.update-info {
+    font-size: 16px;
+    color: rgb(var(--color-neutral-500));
+}
+
+.update-info .dot {
+    color: rgb(var(--color-primary-500));
+}
+
+.toc-header {
+    background-color: rgb(var(--color-neutral-800));
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.toc {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+.toc li a {
+    text-decoration: none;
+    color: rgb(var(--color-primary-500));
+}
+
+.toc li a:hover {
+    text-decoration: underline;
+}
+
+.join h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.join p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.join p strong {
+    font-weight: bold;
+}
+
+.join .link {
+    color: rgb(var(--color-primary-500));
+    text-decoration: none;
+}
+
+.join .link:hover {
+    text-decoration: underline;
+}
+
+.calendar {
+    margin-top: 20px;
+    text-align: center;
+}
 
 /* ============================================ */
 /*                    HERO                      */
