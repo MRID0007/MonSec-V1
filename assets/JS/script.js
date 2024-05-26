@@ -26,4 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
+
+    /* ============================================ */
+    /*           TABLE OF CONTENTS TOGGLE           */
+    /* ============================================ */
+    const tocHeader = document.querySelector('.toc-header');
+    const toc = document.querySelector('.toc');
+
+    tocHeader.addEventListener('click', () => {
+        toc.classList.toggle('show');
+    });
 });
