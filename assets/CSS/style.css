@@ -176,24 +176,24 @@ button, input, optgroup, select, textarea {
 }
 
 .toc-header {
-    background-color: rgb(var(--color-neutral-800));
+    background-color: rgb(var(--color-neutral-700));
     padding: 10px;
     border-top-right-radius: 15px; /* Only round the top right corner */
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border: 1px solid rgb(var(--color-neutral-700));
+    perspective: 1px; 
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .toc {
     list-style: none;
-    padding: 10px;
+    padding: 10px 40px; /* Add more padding to move list to the right */
     margin: 0;
     display: none; /* Hide initially */
-    color: rgb(var(--color-neutral-400)); /* List items in grey */
+    color: rgb(var(--color-neutral-700)); /* List items in grey */
 }
 
 .toc:before {
@@ -202,7 +202,7 @@ button, input, optgroup, select, textarea {
     top: 0;
     left: 0;
     bottom: 0;
-    border-left: 2px solid rgb(var(--color-primary-500)); /* Add thin line on the left side */
+    border-left: 2px solid rgb(var(--color-neutral-700)); /* Add thin line on the left side */
     margin-top: 10px; /* Align line with the top of the contents box */
 }
 
@@ -212,7 +212,7 @@ button, input, optgroup, select, textarea {
 
 .toc li a {
     text-decoration: none;
-    color: rgb(var(--color-primary-500));
+    color: rgb(var(--color-neutral-400));
 }
 
 .toc li a:hover {
@@ -248,7 +248,7 @@ button, input, optgroup, select, textarea {
 }
 
 .about .code-block {
-    background-color: rgb(var(--color-neutral-800));
+    background-color: rgb(var(--color-neutral-700)); /* Set background color to --color-neutral-700 */
     padding: 15px;
     border-radius: 8px;
     overflow-x: auto;
@@ -259,6 +259,30 @@ button, input, optgroup, select, textarea {
     display: block;
     font-family: 'Courier New', Courier, monospace;
     color: inherit;
+}
+
+.about .code-block .keyword {
+    color: rgb(5, 150, 105); /* Int */
+}
+
+.about .code-block .function {
+    color: rgb(16, 185, 129); /* main and printf */
+}
+
+.about .code-block .string {
+    color: rgb(167, 139, 250); /* "Welcome to MonSec!" */
+}
+
+.about .code-block .escape {
+    color: rgb(16, 185, 129); /* \n */
+}
+
+.about .code-block .constant {
+    color: rgb(167, 243, 208); /* EXIT_SUCCESS */
+}
+
+.about .code-block .comment {
+    color: rgb(161, 161, 170); /* Comments */
 }
 
 .about .about-img {
@@ -302,6 +326,13 @@ button, input, optgroup, select, textarea {
     margin-right: 5px;
 }
 
+.image-caption {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(var(--color-neutral-400)); /* Use the existing variable for normal text color */
+    margin-top: -10px;
+}
+
 /* ============================================ */
 /*                  SHOW CLASS                  */
 /* ============================================ */
@@ -331,33 +362,6 @@ button, input, optgroup, select, textarea {
 
 .update-info .dot {
     color: rgb(var(--color-primary-500));
-}
-
-.toc-header {
-    background-color: rgb(var(--color-neutral-800));
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.toc {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px 0;
-}
-
-.toc li {
-    margin: 5px 0;
-}
-
-.toc li a {
-    text-decoration: none;
-    color: rgb(var(--color-primary-500));
-}
-
-.toc li a:hover {
-    text-decoration: underline;
 }
 
 .join h2 {
