@@ -142,6 +142,43 @@ button, input, optgroup, select, textarea {
 }
 
 /* ============================================ */
+/*                  ABOUT US                    */
+/* ============================================ */
+.about {
+    text-align: left;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+.about pre {
+    background-color: rgb(var(--color-neutral-800));
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+
+/* ============================================ */
 /*                    HERO                      */
 /* ============================================ */
 .hero {
