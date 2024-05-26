@@ -267,11 +267,48 @@ button, input, optgroup, select, textarea {
 }
 
 .sponsor-logo {
-    width: 100px;
+    width: 400px; /* Increased size */
     height: auto;
     transition: transform 0.3s;
 }
 
 .sponsor-logo:hover {
     transform: scale(1.1);
+}
+
+.footer {
+    background-color: rgb(var(--color-neutral-800));
+    padding: 20px;
+    text-align: center;
+    color: rgb(var(--color-neutral-300));
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a i {
+    font-size: 28px; /* Adjust size as needed */
+    color: rgb(var(--color-neutral)); /* Make the icons white */
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logos img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
 }
