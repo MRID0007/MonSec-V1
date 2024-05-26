@@ -1,3 +1,6 @@
+/* ============================================ */
+/*                    ROOT                      */
+/* ============================================ */
 :root {
     --color-neutral: 255, 255, 255;
     --color-neutral-50: 250, 250, 250;
@@ -32,6 +35,9 @@
     --color-secondary-900: 6, 78, 59;
 }
 
+/* ============================================ */
+/*                    BODY                      */
+/* ============================================ */
 body {
     margin: 0;
     line-height: 1.5;
@@ -60,12 +66,18 @@ button, input, optgroup, select, textarea {
     padding: 0;
 }
 
+/* ============================================ */
+/*                   CONTAINER                  */
+/* ============================================ */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* ============================================ */
+/*                    HEADER                    */
+/* ============================================ */
 .header {
     display: flex;
     justify-content: space-between;
@@ -77,6 +89,9 @@ button, input, optgroup, select, textarea {
     width: 50px;
 }
 
+/* ============================================ */
+/*                   NAVIGATION                 */
+/* ============================================ */
 .nav {
     position: relative;
 }
@@ -119,10 +134,16 @@ button, input, optgroup, select, textarea {
     display: flex;
 }
 
+/* ============================================ */
+/*                 MAIN CONTENT                 */
+/* ============================================ */
 .main-content {
     margin-top: 50px;
 }
 
+/* ============================================ */
+/*                    HERO                      */
+/* ============================================ */
 .hero {
     margin-top: 20px;
 }
@@ -136,12 +157,18 @@ button, input, optgroup, select, textarea {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* ============================================ */
+/*                DESCRIPTION                   */
+/* ============================================ */
 .description {
     font-size: 18px;
     font-weight: 300;
     margin: 20px 0;
 }
 
+/* ============================================ */
+/*                    LINKS                     */
+/* ============================================ */
 .links {
     margin: 20px 0;
 }
@@ -157,6 +184,9 @@ button, input, optgroup, select, textarea {
     text-decoration: underline;
 }
 
+/* ============================================ */
+/*                    VIDEO                     */
+/* ============================================ */
 .video {
     margin-top: 40px;
 }
@@ -168,6 +198,9 @@ button, input, optgroup, select, textarea {
     border: none;
 }
 
+/* ============================================ */
+/*             RECENT PUBLICATIONS              */
+/* ============================================ */
 .recent-publications {
     margin-top: 50px;
     text-align: center;
@@ -238,6 +271,9 @@ button, input, optgroup, select, textarea {
     color: rgb(var(--color-primary-500));
 }
 
+/* ============================================ */
+/*                   SPONSORS                   */
+/* ============================================ */
 .sponsors {
     margin-top: 50px;
     text-align: center;
@@ -276,6 +312,9 @@ button, input, optgroup, select, textarea {
     transform: scale(1.1);
 }
 
+/* ============================================ */
+/*                    FOOTER                    */
+/* ============================================ */
 .footer {
     background-color: rgb(var(--color-neutral-800));
     padding: 20px;
@@ -311,4 +350,27 @@ button, input, optgroup, select, textarea {
 .footer-info p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+/* ============================================ */
+/*                SCROLL TO TOP                 */
+/* ============================================ */
+#scrollTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(var(--color-primary-500)); /* Set background color */
+    color: white; /* Set text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#scrollTopBtn:hover {
+    background-color: rgb(var(--color-primary-700)); /* Darker background on hover */
 }
