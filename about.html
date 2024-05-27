@@ -9,143 +9,142 @@
 </head>
 <body>
 <!-- ============================================ -->
-    <!--                    HEADER                    -->
+<!--                    HEADER                    -->
+<!-- ============================================ -->
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/monsec-logo.png" alt="MonSec Logo">
+            </a>
+        </div>
+        <nav class="nav">
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Competitions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ctf.html">CTFd↗</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Member Highlights</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Sponsorships</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- ============================================ -->
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/monsec-logo.png" alt="MonSec Logo">
-                </a>
-            </div>
-            <nav class="nav">
-                <button class="menu-toggle">☰</button>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Competitions</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">CTFd↗</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="#">Member Highlights</a></li>
-                    <li><a href="#">Posts</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Sponsorships</a></li>
-                    <li><a href="#">Team</a></li>
+    <!--                   MAIN CONTENT               -->
+    <!-- ============================================ -->
+    <main class="main-content">
+        <section class="about">
+            <h1>About Us</h1>
+            <p class="update-info">Updated: 2024-02-11 <span class="dot">·</span> 228 words <span class="dot">·</span> 2 mins</p>
+            
+            <div class="toc-container">
+                <h2 class="toc-header">Table of Contents</h2>
+                <ul class="toc show">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#weekly-workshop">Weekly Workshop</a></li>
+                    <li><a href="#competitions">Competitions</a></li>
+                    <li><a href="#other">Other</a></li>
                 </ul>
-            </nav>
-        </header>
-
-        <!-- ============================================ -->
-        <!--                   MAIN CONTENT               -->
-        <!-- ============================================ -->
-        <main class="main-content">
-            <section class="about">
-                <h1>About Us</h1>
-                <p class="update-info">Updated: 2024-02-11 <span class="dot">·</span> 228 words <span class="dot">·</span> 2 mins</p>
-                
-                <div class="toc-container">
-                    <h2 class="toc-header">Table of Contents</h2>
-                    <ul class="toc">
-                        <li><a href="#introduction">Introduction</a></li>
-                        <li><a href="#weekly-workshop">Weekly Workshop</a></li>
-                        <li><a href="#competitions">Competitions</a></li>
-                        <li><a href="#other">Other</a></li>
-                    </ul>
-                </div>
-                
-                <h2 id="introduction">Introduction</h2>
-                <p>Welcome to MonSec, a <strong>student-run club</strong> at Monash University dedicated to the teachings of <strong>practical</strong> cybersecurity skills.</p>
-                
+            </div>
+            
+            <h2 id="introduction">Introduction</h2>
+            <p>Welcome to MonSec, a <strong>student-run club</strong> at Monash University dedicated to the teachings of <strong>practical</strong> cybersecurity skills.</p>
+            
 <pre class="code-block">
+<button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
 <code>
-<span class="keyword">#include &lt;stdio.h&gt;</span>
-<span class="keyword">#include &lt;stdlib.h&gt;</span>
-
-<span class="type">int</span> <span class="function">main</span>() {
-    <span class="comment">// printf() displays the string inside quotation</span>
-    <span class="function">printf</span>(<span class="string">"Welcome to MonSec!<span class="escape">\n</span>"</span>);
-    <span class="keyword">return</span> <span class="constant">EXIT_SUCCESS</span>;
-}
+    <span class="keyword">#include &lt;stdio.h&gt;</span>
+    <span class="keyword">#include &lt;stdlib.h&gt;</span>
+    <span class="type">int</span> <span class="function">main</span>() {
+        <span class="comment">// printf() displays the string inside quotation</span>
+        <span class="function">printf</span>(<span class="string">"Welcome to MonSec!<span class="escape">\n</span>"</span>);
+        <span class="keyword">return</span> <span class="constant">EXIT_SUCCESS</span>;
+    }
 </code>
 </pre>
-                    
 
-                <p>Established in 2014, we run <strong>weekly events</strong>, each focused on a single topic, involving both presentations and <strong>beginner-friendly</strong> challenges to test our attendees. Our aim is to introduce students to new and interesting career opportunities, and give them not only the skills to pursue them, but the passion and interest to want to do so.</p>
-                
-                <img src="assets/images/agm_2022_hud1b05a0828a1fd51b679a1cc5ebfdef1_792214_1320x0_resize_q75_box.jpg" alt="2022 Annual General Meeting" class="about-img">
-                <p class="image-caption">2022 Annual General Meeting</p>
+            <p>Established in 2014, we run <strong>weekly events</strong>, each focused on a single topic, involving both presentations and <strong>beginner-friendly</strong> challenges to test our attendees. Our aim is to introduce students to new and interesting career opportunities, and give them not only the skills to pursue them, but the passion and interest to want to do so.</p>
+            
+            <img src="assets/images/agm_2022_hud1b05a0828a1fd51b679a1cc5ebfdef1_792214_1320x0_resize_q75_box.jpg" alt="2022 Annual General Meeting" class="about-img">
+            <p class="image-caption">2022 Annual General Meeting</p>
+            
+            <h2 id="weekly-workshop">Weekly Workshop</h2>
+            <p><a href="#" class="link">times and locations</a></p>
+            <p>We plan to cover the following areas (Note: This is not an exhaustive list).</p>
+            
+            <ul class="nested-list">
+                <li>Penetration testing
+                    <ul>
+                        <li>Network scanning</li>
+                        <li>Password cracking</li>
+                        <li>Wi-Fi attacks</li>
+                        <li>Corporate network hacking</li>
+                    </ul>
+                </li>
+                <li>Cryptography</li>
+                <li>Binary exploitation</li>
+                <li>Reverse-engineering</li>
+                <li>Malware analysis</li>
+                <li>Digital forensics
+                    <ul>
+                        <li>Open-source intelligence (OSINT)</li>
+                        <li>Steganography</li>
+                        <li>Network sniffing</li>
+                    </ul>
+                </li>
+                <li>Game hacking</li>
+                <li>Mobile app hacking</li>
+            </ul>
+            <p>We are open to people bringing their own projects and ideas to work on with other members.</p>
+            <p>We also plan to bring industry experts to give students an inside look into a jobs in cybersecurity and networking opportunities. If you are a cybersecurity professional and would like to collaborate with us, please take a note of our <a href="contact.html" class="link">contact details</a>.</p>
+            
+            <h2 id="competitions">Competitions</h2>
+            <p>We participate in various <a href="ctf.html" class="link">CTF</a>-type competitions both domestically and internationally.</p>
+            
+            <h2 id="other">Other</h2>
+            <p>We are <a href="registered-charity.html" class="link">registered</a> as a non-for-profit organisation in Australia.</p>
+        </section>
 
-                <h2 id="weekly-workshop">Weekly Workshop</h2>
-                <p><a href="#" class="link">times and locations</a></p>
-                <p>We plan to cover the following areas (Note: This is not an exhaustive list).</p>
-                
-                <ul class="nested-list">
-                    <li>Penetration testing
-                        <ul>
-                            <li>Network scanning</li>
-                            <li>Password cracking</li>
-                            <li>Wi-Fi attacks</li>
-                            <li>Corporate network hacking</li>
-                        </ul>
-                    </li>
-                    <li>Cryptography</li>
-                    <li>Binary exploitation</li>
-                    <li>Reverse-engineering</li>
-                    <li>Malware analysis</li>
-                    <li>Digital forensics
-                        <ul>
-                            <li>Open-source intelligence (OSINT)</li>
-                            <li>Steganography</li>
-                            <li>Network sniffing</li>
-                        </ul>
-                    </li>
-                    <li>Game hacking</li>
-                    <li>Mobile app hacking</li>
-                </ul>
-                <p>We are open to people bringing their own projects and ideas to work on with other members.</p>
-                <p>We also plan to bring industry experts to give students an inside look into a jobs in cybersecurity and networking opportunities. If you are a cybersecurity professional and would like to collaborate with us, please take a note of our contact details.</p>
-                
-                <h2 id="competitions">Competitions</h2>
-                <p>We participate in various CTF-type competitions both domestically and internationally.</p>
-                
-                <h2 id="other">Other</h2>
-                <p>We are registered as a non-for-profit organisation in Australia.</p>
-            </section>
+        <!-- ============================================ -->
+        <!--                    FOOTER                    -->
+        <!-- ============================================ -->
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-mastodon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-rss"></i></a>
+            </div>
+            <div class="footer-logos">
+                <img src="assets/images/msa_cs.png" alt="Clubs & Societies">
+                <img src="assets/images/acnc.png" alt="Registered Charity">
+            </div>
+            <div class="footer-info">
+                <p>© 2024 MonSec</p>
+                <p>ABN 61 940 766 256</p>
+                <p>Powered by Native HTML5</p>
+            </div>
+        </footer>
+    </main>
+</div>
 
-            <!-- ============================================ -->
-            <!--                    FOOTER                    -->
-            <!-- ============================================ -->
-            <footer class="footer">
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-mastodon"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
-                    <a href="#"><i class="fas fa-rss"></i></a>
-                </div>
-                <div class="footer-logos">
-                    <img src="assets/images/msa_cs.png" alt="Clubs & Societies">
-                    <img src="assets/images/acnc.png" alt="Registered Charity">
-                </div>
-                <div class="footer-info">
-                    <p>© 2024 MonSec</p>
-                    <p>ABN 61 940 766 256</p>
-                    <p>Powered by Native HTML5</p>
-                </div>
-            </footer>
-        </main>
-    </div>
+<!-- ============================================ -->
+<!--                 SCROLL TO TOP                -->
+<!-- ============================================ -->
+<button id="scrollTopBtn" title="Go to top">↑</button>
 
-    <!-- ============================================ -->
-    <!--                 SCROLL TO TOP                -->
-    <!-- ============================================ -->
-    <button id="scrollTopBtn" title="Go to top">↑</button>
-
-    <script src="assets/JS/script.js"></script>
+<script src="assets/JS/script.js"></script>
 </body>
 </html>
