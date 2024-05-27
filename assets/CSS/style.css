@@ -587,6 +587,132 @@ button, input, optgroup, select, textarea {
     margin-right: 5px;
 }
 
+/* ============================================ */
+/*                COMPETITIVE TEAM              */
+/* ============================================ */
+.competition {
+    text-align: left;
+    padding: 20px;
+    color: rgb(var(--color-neutral));
+}
+
+.competition h1, .competition h2:not(.toc-header) {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.competition .toc-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.competition .toc-header {
+    background-color: rgb(var(--color-neutral-700));
+    padding: 10px;
+    border-top-right-radius: 15px; /* Only round the top right corner */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    perspective: 1px; 
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.competition .toc {
+    list-style: none;
+    padding: 10px 40px; /* Add more padding to move list to the right */
+    margin: 0;
+    display: block; /* Show initially */
+    color: rgb(var(--color-neutral-700)); /* List items in grey */
+}
+
+.competition .toc:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: 2px solid rgb(var(--color-neutral-700)); /* Add thin line on the left side */
+    margin-top: 10px; /* Align line with the top of the contents box */
+}
+
+.competition .toc li {
+    margin: 5px 0;
+}
+
+.competition .toc li a {
+    text-decoration: none;
+    color: rgb(var(--color-neutral-400));
+    font-weight: normal; /* Make the links non-bold */
+}
+
+.competition .toc li a:hover {
+    text-decoration: underline;
+}
+
+.competition p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.competition p strong {
+    font-weight: bold;
+    color: rgb(var(--color-primary-500));
+}
+
+.competition .link {
+    color: rgb(var(--color-primary-500));
+    text-decoration: none;
+}
+
+.competition .link:hover {
+    text-decoration: underline;
+}
+
+.nested-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nested-list > li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+.nested-list > li::before {
+    content: '•';
+    color: rgb(var(--color-primary-500));
+    margin-right: 5px;
+}
+
+.nested-list ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.nested-list ul li {
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+.nested-list ul li::before {
+    content: '▪';
+    color: rgb(var(--color-primary-500));
+    margin-right: 5px;
+}
+
+/* ============================================ */
+/*                  SHOW CLASS                  */
+/* ============================================ */
+.show {
+    display: block !important; /* Ensure the dropdown is displayed */
+}
 
 /* ============================================ */
 /*                    HERO                      */
